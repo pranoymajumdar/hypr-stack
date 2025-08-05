@@ -33,7 +33,7 @@ A modern full-stack monorepo starter using React + Tanstack Router, Convex, and 
 
 > ⚠️ **Important Note**
 > This starter uses **npm** by default for package management.  
-> If you'd like to use **pnpm** instead, please follow the [pnpm setup instructions](#using-pnpm) below.
+> If you'd like to use **pnpm** instead, please follow the [pnpm setup instructions](#-using-pnpm) below.
 
 ```
 git clone https://github.com/pranoymajumdar/hypr-stack
