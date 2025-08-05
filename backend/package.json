@@ -1,0 +1,20 @@
+{
+	"name": "@repo/backend",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "convex dev",
+		"predev": "convex dev --until-success && convex dashboard",
+		"logs": "convex logs"
+	},
+	"dependencies": {
+		"@auth/core": "^0.37.0",
+		"@convex-dev/auth": "^0.0.88",
+		"@repo/shared": "*",
+		"convex": "^1.25.4"
+	},
+	"devDependencies": {
+		"typescript": "^5.2.2"
+	}
+}

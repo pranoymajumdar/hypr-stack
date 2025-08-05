@@ -1,0 +1,13 @@
+{
+	"extends": "../../tsconfig.json",
+	"compilerOptions": {
+		/* These compiler options are required by Convex */
+		"skipLibCheck": true,
+		"moduleResolution": "Bundler",
+		"lib": ["ES2021", "dom"],
+		"isolatedModules": true,
+		"noEmit": true
+	},
+	"include": ["./**/*"],
+	"exclude": ["./_generated"]
+}
