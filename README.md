@@ -48,9 +48,9 @@ To use **pnpm** with this starter, follow these steps carefully to configure you
 1. **Create a `pnpm-workspace.yaml` file** in the root of your project with the following content, listing your workspace folders:
 ```yaml
 packages:
-  - apps/*
-  - packages/*
-  - tooling/*
+  - web/
+  - backend/
+  - shared/
 ```
 2. Update your package.json dependencies for `web/` & `backend/`:
 
