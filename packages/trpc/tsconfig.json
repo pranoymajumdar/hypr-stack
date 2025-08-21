@@ -1,0 +1,3 @@
+{
+  "extends": "@hypr-stack/tsconfig/base.json"
+}
