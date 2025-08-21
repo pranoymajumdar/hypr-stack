@@ -1,5 +1,5 @@
 {
-  "extends": "../../packages/typescript-config/base.json",
+  "extends": "@hypr-stack/tsconfig/base.json",
   "compilerOptions": {
     "outDir": "./dist"
   },
