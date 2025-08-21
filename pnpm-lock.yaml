@@ -26,6 +26,12 @@ importers:
       '@hono/node-server':
         specifier: ^1.19.0
         version: 1.19.0(hono@4.9.2)
+      '@hono/trpc-server':
+        specifier: ^0.4.0
+        version: 0.4.0(@trpc/server@11.5.0(typescript@5.9.2))(hono@4.9.2)
+      '@hypr-stack/trpc':
+        specifier: workspace:*
+        version: link:../../packages/trpc
       hono:
         specifier: ^4.9.2
         version: 4.9.2
@@ -275,6 +281,13 @@ packages:
     peerDependencies:
       hono: ^4
 
+  '@hono/trpc-server@0.4.0':
+    resolution: {integrity: sha512-LGlJfCmNIGMwcknZEIYdujVMs9OkNVazhpOhaz3kTWOXvNL660VOHpvvktosCiJrajyBY1RtIJKQ+IKaQvNuSg==}
+    engines: {node: '>=16.0.0'}
+    peerDependencies:
+      '@trpc/server': ^10.10.0 || >11.0.0-rc
+      hono: '>=4.*'
+
   '@trpc/client@11.5.0':
     resolution: {integrity: sha512-32oH+KOAdo73jJKjU9tyG+vCjID6A28NgXwUNr691O5HjpF5yyTX51Zzyee8YtGzU89Nw/drCHdfA4gD7BN2eg==}
     peerDependencies:
@@ -488,6 +501,11 @@ snapshots:
 
   '@hono/node-server@1.19.0(hono@4.9.2)':
     dependencies:
+      hono: 4.9.2
+
+  '@hono/trpc-server@0.4.0(@trpc/server@11.5.0(typescript@5.9.2))(hono@4.9.2)':
+    dependencies:
+      '@trpc/server': 11.5.0(typescript@5.9.2)
       hono: 4.9.2
 
   '@trpc/client@11.5.0(@trpc/server@11.5.0(typescript@5.9.2))(typescript@5.9.2)':

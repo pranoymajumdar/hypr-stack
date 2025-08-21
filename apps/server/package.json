@@ -8,10 +8,12 @@
   },
   "dependencies": {
     "@hono/node-server": "^1.19.0",
+    "@hono/trpc-server": "^0.4.0",
+    "@hypr-stack/trpc": "workspace:*",
     "hono": "^4.9.2"
   },
   "devDependencies": {
-    "tsx": "^4.7.1",
-    "@hypr-stack/tsconfig": "workspace:*"
+    "@hypr-stack/tsconfig": "workspace:*",
+    "tsx": "^4.7.1"
   }
 }
