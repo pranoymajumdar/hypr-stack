@@ -105,6 +105,15 @@ importers:
 
   packages/trpc:
     dependencies:
+      '@hypr-stack/auth':
+        specifier: workspace:*
+        version: link:../auth
+      '@hypr-stack/db':
+        specifier: workspace:*
+        version: link:../db
+      '@hypr-stack/env':
+        specifier: workspace:*
+        version: link:../env
       '@trpc/client':
         specifier: ^11.5.0
         version: 11.5.0(@trpc/server@11.5.0(typescript@5.9.2))(typescript@5.9.2)
@@ -118,12 +127,6 @@ importers:
         specifier: ^4.0.17
         version: 4.0.17
     devDependencies:
-      '@hypr-stack/db':
-        specifier: workspace:*
-        version: link:../db
-      '@hypr-stack/env':
-        specifier: workspace:*
-        version: link:../env
       '@hypr-stack/tsconfig':
         specifier: workspace:*
         version: link:../tsconfig

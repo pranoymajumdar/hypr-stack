@@ -14,6 +14,7 @@
     "@hypr-stack/tsconfig": "workspace:*"
   },
   "dependencies": {
+    "@hypr-stack/auth": "workspace:*",
     "@hypr-stack/env": "workspace:*",
     "@hypr-stack/db": "workspace:*",
     "@trpc/client": "^11.5.0",
