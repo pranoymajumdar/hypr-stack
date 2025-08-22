@@ -11,11 +11,11 @@
     }
   },
   "devDependencies": {
-    "@hypr-stack/tsconfig": "workspace:*",
-    "@hypr-stack/env": "workspace:*",
-    "@hypr-stack/db": "workspace:*"
+    "@hypr-stack/tsconfig": "workspace:*"
   },
   "dependencies": {
+    "@hypr-stack/env": "workspace:*",
+    "@hypr-stack/db": "workspace:*",
     "@trpc/client": "^11.5.0",
     "@trpc/server": "^11.5.0",
     "superjson": "^2.2.2",
