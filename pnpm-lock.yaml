@@ -90,6 +90,12 @@ importers:
         specifier: ^4.0.17
         version: 4.0.17
     devDependencies:
+      '@hypr-stack/db':
+        specifier: workspace:*
+        version: link:../db
+      '@hypr-stack/env':
+        specifier: workspace:*
+        version: link:../env
       '@hypr-stack/tsconfig':
         specifier: workspace:*
         version: link:../tsconfig
