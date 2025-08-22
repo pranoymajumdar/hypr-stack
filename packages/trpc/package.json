@@ -3,8 +3,17 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
+  "exports": {
+    "./server": {
+      "import": "./src/server/index.ts",
+      "types": "./src/server/index.ts",
+      "default": "./src/server/index.ts"
+    }
+  },
   "devDependencies": {
-    "@hypr-stack/tsconfig": "workspace:*"
+    "@hypr-stack/tsconfig": "workspace:*",
+    "@hypr-stack/env": "workspace:*",
+    "@hypr-stack/db": "workspace:*"
   },
   "dependencies": {
     "@trpc/client": "^11.5.0",
