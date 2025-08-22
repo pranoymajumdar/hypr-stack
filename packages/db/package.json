@@ -25,11 +25,11 @@
   },
   "dependencies": {
     "@hypr-stack/env": "workspace:*",
-    "@hypr-stack/tsconfig": "workspace:*",
     "drizzle-orm": "^0.44.4",
     "postgres": "^3.4.7"
   },
   "devDependencies": {
+    "@hypr-stack/tsconfig": "workspace:*",
     "drizzle-kit": "^0.31.4"
   }
 }
