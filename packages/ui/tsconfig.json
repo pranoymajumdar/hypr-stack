@@ -1,0 +1,8 @@
+{
+  "extends": "@hypr-stack/tsconfig/react-library.json",
+  "compilerOptions": {
+    "paths": {
+      "@hypr-stack/ui/*": ["./src/*"]
+    }
+  }
+}
