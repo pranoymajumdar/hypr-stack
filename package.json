@@ -14,7 +14,8 @@
     "db:check": "pnpm --filter @hypr-stack/db check",
     "db:up": "pnpm --filter @hypr-stack/db up",
     "db:studio": "pnpm --filter @hypr-stack/db studio",
-    "ui:add": "pnpm --filter @hypr-stack/ui run add"
+    "ui:add": "pnpm --filter @hypr-stack/ui run add",
+    "ui:refresh": "pnpm --filter @hypr-stack/ui run refresh"
   },
   "devDependencies": {
     "@biomejs/biome": "2.2.0",

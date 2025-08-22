@@ -1,6 +1,13 @@
 import { createCallerFactory, router } from "./init";
+import { publicProcedure } from "./procedures/publicProcedure";
 
-export const appRouter = router({});
+export const appRouter = router({
+  healthCheck: publicProcedure.query(async () => {
+    return {
+      status: "ok",
+    };
+  }),
+});
 
 // Export type router type signature
 export type AppRouter = typeof appRouter;

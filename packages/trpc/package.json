@@ -8,6 +8,11 @@
       "import": "./src/server/index.ts",
       "types": "./src/server/index.ts",
       "default": "./src/server/index.ts"
+    },
+    "./client": {
+      "import": "./src/client/index.ts",
+      "types": "./src/client/index.ts",
+      "default": "./src/client/index.ts"
     }
   },
   "devDependencies": {
@@ -15,10 +20,12 @@
   },
   "dependencies": {
     "@hypr-stack/auth": "workspace:*",
-    "@hypr-stack/env": "workspace:*",
     "@hypr-stack/db": "workspace:*",
+    "@hypr-stack/env": "workspace:*",
+    "@tanstack/react-query": "^5.85.5",
     "@trpc/client": "^11.5.0",
     "@trpc/server": "^11.5.0",
+    "@trpc/tanstack-react-query": "^11.5.0",
     "superjson": "^2.2.2",
     "zod": "^4.0.17"
   }

@@ -2,6 +2,5 @@ import { env } from "@hypr-stack/env/client";
 import { createAuthClient } from "better-auth/react";
 
 export const authClient = createAuthClient({
-  /** The base URL of the server (optional if you're using the same domain) */
-  baseURL: env.VITE_SERVER_URL,
+  baseURL: `${env.VITE_SERVER_URL}/auth`,
 });

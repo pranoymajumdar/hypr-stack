@@ -4,14 +4,13 @@
   "private": true,
   "type": "module",
   "exports": {
+    ".": "./src/index.ts",
     "./globals.css": "./src/styles/globals.css",
-    "./postcss.config": "./postcss.config.mjs",
-    "./lib/*": "./src/lib/*.ts",
-    "./components/*": "./src/components/*.tsx",
-    "./hooks/*": "./src/hooks/*.ts"
+    "./postcss.config": "./postcss.config.mjs"
   },
   "scripts": {
-    "add": "pnpm dlx shadcn@latest add"
+    "add": "pnpm dlx shadcn@latest add",
+    "refresh": "node scripts/refresh-imports.js"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",

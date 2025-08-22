@@ -29,7 +29,7 @@ export const env = createEnv({
 
   runtimeEnv: process.env,
 
-  isServer: true,
+  isServer: typeof window === "undefined",
 
   /**
    * Makes it so that empty strings are treated as undefined. `SOME_VAR: z.string()` and
