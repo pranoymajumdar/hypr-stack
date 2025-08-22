@@ -1,0 +1,25 @@
+{
+  "name": "@hypr-stack/auth",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./server": {
+      "default": "./src/server/auth.ts",
+      "types": "./src/server/auth.ts",
+      "import": "./src/server/auth.ts"
+    },
+    "./client": {
+      "default": "./src/client/auth.ts",
+      "types": "./src/client/auth.ts",
+      "import": "./src/client/auth.ts"
+    }
+  },
+  "dependencies": {
+    "@hypr-stack/db": "workspace:*",
+    "@hypr-stack/env": "workspace:*",
+    "better-auth": "^1.3.7"
+  },
+  "devDependencies": {
+    "@hypr-stack/tsconfig": "workspace:*"
+  }
+}
