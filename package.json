@@ -4,9 +4,16 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "check-types": "turbo run check-types"
+    "lint": "pnpm exec biome lint",
+    "format": "pnpm exec biome format --write",
+    "check": "pnpm exec biome check --write",
+    "db:generate": "pnpm --filter @hypr-stack/db generate",
+    "db:migrate": "pnpm --filter @hypr-stack/db migrate",
+    "db:push": "pnpm --filter @hypr-stack/db push",
+    "db:pull": "pnpm --filter @hypr-stack/db pull",
+    "db:check": "pnpm --filter @hypr-stack/db check",
+    "db:up": "pnpm --filter @hypr-stack/db up",
+    "db:studio": "pnpm --filter @hypr-stack/db studio"
   },
   "devDependencies": {
     "@biomejs/biome": "2.2.0",
