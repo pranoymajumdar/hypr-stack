@@ -1,3 +1,6 @@
 {
-  "extends": "@hypr-stack/tsconfig/base.json"
+  "extends": "@hypr-stack/tsconfig/base.json",
+  "compilerOptions": {
+    "types": ["vite"]
+  }
 }

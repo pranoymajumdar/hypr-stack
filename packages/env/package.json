@@ -7,13 +7,20 @@
       "default": "./src/server.ts",
       "types": "./src/server.ts",
       "import": "./src/server.ts"
+    },
+    "./client": {
+      "default": "./src/client.ts",
+      "types": "./src/client.ts",
+      "import": "./src/client.ts"
     }
   },
   "dependencies": {
     "@t3-oss/env-core": "^0.13.8",
+    "dotenv": "^17.2.1",
     "zod": "^4.0.17"
   },
   "devDependencies": {
-    "@hypr-stack/tsconfig": "workspace:*"
+    "@hypr-stack/tsconfig": "workspace:*",
+    "vite": "^7.1.3"
   }
 }
