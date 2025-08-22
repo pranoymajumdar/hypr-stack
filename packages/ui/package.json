@@ -9,6 +9,9 @@
     "./components/*": "./src/components/*.tsx",
     "./hooks/*": "./src/hooks/*.ts"
   },
+  "scripts": {
+    "add": "pnpm dlx shadcn@latest add"
+  },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",
     "@tailwindcss/postcss": "^4.1.12",
