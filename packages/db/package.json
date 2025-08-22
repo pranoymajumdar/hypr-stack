@@ -1,0 +1,23 @@
+{
+  "name": "@hypr-stack/db",
+  "version": "0.0.0",
+  "private": "true",
+  "scripts": {
+    "generate": "pnpm drizzle-kit generate",
+    "migrate": "pnpm drizzle-kit migrate",
+    "push": "pnpm drizzle-kit push",
+    "pull": "pnpm drizzle-kit pull",
+    "check": "pnpm drizzle-kit check",
+    "up": "pnpm drizzle-kit up",
+    "studio": "pnpm drizzle-kit studio"
+  },
+  "dependencies": {
+    "@hypr-stack/env": "workspace:*",
+    "@hypr-stack/tsconfig": "workspace:*",
+    "drizzle-orm": "^0.44.4",
+    "postgres": "^3.4.7"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.31.4"
+  }
+}
