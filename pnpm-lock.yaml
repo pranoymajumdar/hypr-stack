@@ -43,6 +43,19 @@ importers:
         specifier: ^4.7.1
         version: 4.20.4
 
+  packages/env:
+    dependencies:
+      '@t3-oss/env-core':
+        specifier: ^0.13.8
+        version: 0.13.8(typescript@5.9.2)(zod@4.0.17)
+      zod:
+        specifier: ^4.0.17
+        version: 4.0.17
+    devDependencies:
+      '@hypr-stack/tsconfig':
+        specifier: workspace:*
+        version: link:../tsconfig
+
   packages/trpc:
     dependencies:
       '@trpc/client':
@@ -288,6 +301,23 @@ packages:
       '@trpc/server': ^10.10.0 || >11.0.0-rc
       hono: '>=4.*'
 
+  '@t3-oss/env-core@0.13.8':
+    resolution: {integrity: sha512-L1inmpzLQyYu4+Q1DyrXsGJYCXbtXjC4cICw1uAKv0ppYPQv656lhZPU91Qd1VS6SO/bou1/q5ufVzBGbNsUpw==}
+    peerDependencies:
+      arktype: ^2.1.0
+      typescript: '>=5.0.0'
+      valibot: ^1.0.0-beta.7 || ^1.0.0
+      zod: ^3.24.0 || ^4.0.0-beta.0
+    peerDependenciesMeta:
+      arktype:
+        optional: true
+      typescript:
+        optional: true
+      valibot:
+        optional: true
+      zod:
+        optional: true
+
   '@trpc/client@11.5.0':
     resolution: {integrity: sha512-32oH+KOAdo73jJKjU9tyG+vCjID6A28NgXwUNr691O5HjpF5yyTX51Zzyee8YtGzU89Nw/drCHdfA4gD7BN2eg==}
     peerDependencies:
@@ -507,6 +537,11 @@ snapshots:
     dependencies:
       '@trpc/server': 11.5.0(typescript@5.9.2)
       hono: 4.9.2
+
+  '@t3-oss/env-core@0.13.8(typescript@5.9.2)(zod@4.0.17)':
+    optionalDependencies:
+      typescript: 5.9.2
+      zod: 4.0.17
 
   '@trpc/client@11.5.0(@trpc/server@11.5.0(typescript@5.9.2))(typescript@5.9.2)':
     dependencies:
