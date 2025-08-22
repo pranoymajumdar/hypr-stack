@@ -1,6 +1,6 @@
 import { serve } from "@hono/node-server";
 import { trpcServer } from "@hono/trpc-server";
-import { appRouter } from "@hypr-stack/trpc/server/app";
+import { appRouter } from "@hypr-stack/trpc/server";
 import { Hono } from "hono";
 
 const app = new Hono();
