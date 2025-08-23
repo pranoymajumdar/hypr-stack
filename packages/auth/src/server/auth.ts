@@ -18,4 +18,6 @@ export const auth = betterAuth({
       httpOnly: true,
     },
   },
+  baseURL: env.BETTER_AUTH_URL,
+  secret: env.BETTER_AUTH_SECRET,
 });

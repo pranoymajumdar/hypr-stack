@@ -20,14 +20,15 @@ app.use(
   }),
 );
 
+app.on(["POST", "GET"], "/api/auth/**", (c: Context) =>
+  auth.handler(c.req.raw),
+);
 app.use(
   "/trpc/*",
   trpcServer({
     router: appRouter,
   }),
 );
-
-app.on(["POST", "GET"], "/auth/**", (c: Context) => auth.handler(c.req.raw));
 
 app.get("/", (c) => {
   return c.text("Hello Hono!");
