@@ -1,3 +1,5 @@
+import { Header } from "@/components/header";
+import { Toaster } from "@hypr-stack/ui";
 import { TanstackDevtools } from "@tanstack/react-devtools";
 import type { QueryClient } from "@tanstack/react-query";
 import { createRootRouteWithContext, Outlet } from "@tanstack/react-router";
@@ -10,6 +12,7 @@ interface AppContext {
 export const Route = createRootRouteWithContext<AppContext>()({
   component: () => (
     <>
+      <Header />
       <Outlet />
       <TanstackDevtools
         config={{
@@ -22,6 +25,7 @@ export const Route = createRootRouteWithContext<AppContext>()({
           },
         ]}
       />
+      <Toaster />
     </>
   ),
 });
